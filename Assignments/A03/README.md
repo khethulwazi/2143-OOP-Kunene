@@ -1,3 +1,7 @@
+* Khethulwazi Kunene  
+* 09/29/2018  
+* Class: 2143 OOP  
+---
 * Class
 
 ```
@@ -92,7 +96,7 @@ They are called so because their values are instance specific.
 * Member Variable
 
 ```
-
+a variable that is associated with a specific object, and is accessible for all its methods 
 ```
 
 * Inheritance
@@ -114,5 +118,7 @@ For example, in the following program, B’s constructor is called before A’s 
 * Composition
 
 ```
-
+object composition models a “has-a” relationship between two objects.  
+A car “has-a” transmission. Your computer “has-a” CPU. ...  
+Object Composition allows us to create complex classes by combining simpler, more easily manageable parts.
 ```
