@@ -40,7 +40,12 @@ class myList{
         Head = Tail = NULL;
         Size = 0;
     }
-
+    
+    /**
+    * Adds a new node with a specified value at the end, increments size.
+    * @Params: receives an integer value
+    * @returns: nothing
+    */
     void Push(int val){
         // allocate new memory and init node
         Node *Temp = new Node(val);
@@ -55,6 +60,11 @@ class myList{
         Size++;
     }
 
+    /**
+    * insert an integer into the correct posiotion in the list, increments size.
+    * @Params: receives an integer value
+    * @returns nothing
+    */
     void Insert(int val){
         // allocate new memory and init node
         Node *Temp = new Node(val);
@@ -90,7 +100,12 @@ class myList{
         Size--;
         return 0; //
     }
-
+    
+    /**
+    * This funtion overloads the + operator so that it works with lists.
+    * @Params: constant list Rhs passed by reference
+    * @Returns: a modified list using the + operator
+    */
     myList operator+(const List &Rhs){
         // Create a new list that will contain both when done
         List NewList;
@@ -117,8 +132,13 @@ class myList{
         return NewList;
     }
 
-    // Implementation of [] operator.  This function returns an
-    // int value as if the list were an array.
+    /**
+    * Implementation of [] operator. 
+    * This function returns an
+    * int value as if the list were an array.
+    * @Receives: the desired integer index 
+    * @Returns: pointer to X
+    */
     int operator[](int index){
         Node *Temp = Head;
 
